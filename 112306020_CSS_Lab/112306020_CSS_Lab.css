@@ -1,0 +1,98 @@
+
+    .header{
+        font-family: 'Verdana';
+        text-align:center;
+        background-color:dodgerblue;
+        color:white;
+        padding:50px;
+    }
+    .navbar {
+        list-style: none;
+        
+        display:flex;
+        justify-content:space-around;
+        text-align:center;
+        background-color:darkblue;
+        color:white;
+        padding: 5px 100px;
+        }
+    .navbar a {
+        color: white;
+        padding: 5px 100px;
+        text-decoration: none;
+        text-align: center;
+    }
+    .navbar a:hover {
+        background-color:darkblue;
+        color:skyblue;
+    }
+
+    /* Dropdown Button */
+.dropbtn {
+    
+        background-color:darkblue;
+        color:white;
+        
+        border: none;
+
+}
+.dropbtn a {
+   color: white;
+    border:none;
+    text-decoration: none;
+    text-align: center;
+}
+.dropbtn a:hover{        
+        background-color:darkblue;
+        color:skyblue;
+       
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 10px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block}
+
+h4{
+    font-size:5;
+    font-family: 'Verdana';    
+    color:white;
+}
+
+        @media (max-width: 700px) {
+            .row, .navbar {   
+            flex-direction: column;
+            }
+        }
+
+        @media print{
+            /* Styles for printing */
+            body {
+                color: lightgoldenrodyellow;
+                background-color: lightsteelblue;
+            }
+        }
+}
